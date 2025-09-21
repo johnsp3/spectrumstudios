@@ -1,6 +1,6 @@
 # Spectrum Studios
 
-A beautiful, minimalist website for Spectrum Studios - a premium recording studio in Grand Cayman.
+A beautiful, minimalist website for Spectrum Studios - a premium recording studio in the Swiss Alps since 2001.
 
 ## Features
 
@@ -76,8 +76,8 @@ The website embodies the luxury and discretion of Spectrum Studios through:
 
 ## Contact
 
-For inquiries about Spectrum Studios, please contact: inquiries@spectrumstudios.ky
+For inquiries about Spectrum Studios, please contact: inquiries@spectrumstudios.ch
 
 ---
 
-*Spectrum Studios • Established 2001 • Cayman Islands* 
+*Spectrum Studios • Established 2001 • Swiss Alps, Switzerland* 
