@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0a0a0a;
+  color: #ffffff;
+  overflow-x: hidden;
+  line-height: 1.6;
+  font-weight: 300;
+  letter-spacing: 0.025em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background: linear-gradient(180deg, rgba(0,0,0,0.95) 0%, rgba(15,15,15,0.8) 100%);
+  transition: transform 0.1s ease-out;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    radial-gradient(circle at 20% 30%, rgba(45,45,45,0.15) 0%, transparent 60%),
+    radial-gradient(circle at 80% 70%, rgba(35,35,35,0.1) 0%, transparent 50%);
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 5.5rem;
+  font-weight: 300;
+  letter-spacing: 0.15em;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 0.9;
+}
+
+.tagline {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.9rem;
+  color: #999999;
+  font-weight: 400;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  margin-top: 0.5rem;
+}
+
+.section {
+  padding: 180px 0;
+  position: relative;
+}
+
+.section-minimal {
+  padding: 120px 0;
+}
+
+.content-block {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  margin-bottom: 5rem;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 1.1;
+}
+
+.alpine-architecture {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 120px auto;
+  padding: 80px 0;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.alpine-architecture h3 {
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.alpine-architecture p {
+  font-family: 'Inter', sans-serif;
+  color: #b8b8b8;
+  line-height: 1.8;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.equipment-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  margin-top: 120px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.equipment-item {
+  padding: 0;
+  background: none;
+  border: none;
+  text-align: left;
+  position: relative;
+}
+
+.equipment-item::before {
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: 0;
+  width: 60px;
+  height: 1px;
+  background: linear-gradient(90deg, #444444 0%, transparent 100%);
+}
+
+.equipment-item h3 {
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.equipment-item p {
+  font-family: 'Inter', sans-serif;
+  color: #b8b8b8;
+  line-height: 1.8;
+  font-size: 0.95rem;
+  font-weight: 300;
+  letter-spacing: 0.015em;
+}
+
+.divider {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, #444444 50%, transparent 100%);
+  margin: 120px auto;
+}
+
+.statement {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.statement h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-bottom: 3.5rem;
+  color: #ffffff;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+}
+
+.statement p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  color: #b8b8b8;
+  line-height: 1.8;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+}
+
+.contact-section {
+  background: rgba(12,12,12,0.9);
+  padding: 140px 100px;
+  text-align: center;
+  margin: 180px 0;
+  border-top: 1px solid #2a2a2a;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.contact-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  margin-bottom: 3.5rem;
+  color: #ffffff;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-info {
+  font-family: 'Inter', sans-serif;
+  color: #999999;
+  font-size: 0.95rem;
+  line-height: 2.2;
+  margin-bottom: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 0.03em;
+}
+
+.email-link {
+  display: inline-block;
+  font-family: 'Inter', sans-serif;
+  background: none;
+  color: #ffffff;
+  padding: 18px 0;
+  text-decoration: none;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #555555;
+  transition: all 0.4s ease;
+  font-size: 0.85rem;
+}
+
+.email-link:hover {
+  border-bottom-color: #ffffff;
+  letter-spacing: 0.2em;
+}
+
+.footer {
+  text-align: center;
+  padding: 100px 0;
+  color: #555555;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.nav {
+  position: fixed;
+  top: 50px;
+  right: 50px;
+  z-index: 1000;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #777777;
+  font-weight: 400;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+  
+  .alpine-architecture {
+    padding: 60px 0;
+    margin-bottom: 100px;
+  }
+  
+  .alpine-architecture h3 {
+    font-size: 1.4rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .alpine-architecture p {
+    font-size: 0.95rem;
+  }
+  
+  .equipment-grid {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    max-width: 600px;
+  }
+  
+  .section {
+    padding: 140px 0;
+  }
+  
+  .section-minimal {
+    padding: 100px 0;
+  }
+  
+  .contact-section {
+    padding: 100px 60px;
+    margin: 140px 0;
+  }
+  
+  .logo {
+    font-size: 4.5rem;
+  }
+  
+  .section-title {
+    font-size: 2.4rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 3.2rem;
+    letter-spacing: 0.1em;
+  }
+  
+  .section {
+    padding: 100px 0;
+  }
+  
+  .section-minimal {
+    padding: 80px 0;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    letter-spacing: 0.06em;
+  }
+  
+  .alpine-architecture {
+    padding: 50px 0;
+    margin-bottom: 80px;
+  }
+  
+  .alpine-architecture h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .alpine-architecture p {
+    font-size: 0.9rem;
+  }
+  
+  .equipment-grid {
+    gap: 60px;
+    margin-top: 80px;
+  }
+  
+  .equipment-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 0.04em;
+  }
+  
+  .equipment-item p {
+    font-size: 0.9rem;
+    line-height: 1.7;
+  }
+  
+  .statement {
+    padding: 60px 0;
+  }
+  
+  .statement h2 {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.03em;
+  }
+  
+  .statement p {
+    font-size: 1rem;
+  }
+  
+  .contact-section {
+    padding: 80px 30px;
+    margin: 100px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    letter-spacing: 0.1em;
+  }
+  
+  .contact-info {
+    font-size: 0.9rem;
+    line-height: 2;
+  }
+  
+  .divider {
+    width: 80px;
+    margin: 80px auto;
+  }
+  
+  .nav {
+    top: 30px;
+    right: 20px;
+    font-size: 0.7rem;
+  }
+  
+  .footer {
+    padding: 80px 0;
+    font-size: 0.7rem;
+  }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .logo {
+    font-size: 2.8rem;
+    letter-spacing: 0.08em;
+  }
+  
+  .section {
+    padding: 80px 0;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .alpine-architecture {
+    padding: 40px 0;
+    margin-bottom: 60px;
+  }
+  
+  .alpine-architecture h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .alpine-architecture p {
+    font-size: 0.85rem;
+  }
+  
+  .equipment-grid {
+    gap: 50px;
+    margin-top: 60px;
+  }
+  
+  .equipment-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .equipment-item p {
+    font-size: 0.85rem;
+  }
+  
+  .statement h2 {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .statement p {
+    font-size: 0.95rem;
+  }
+  
+  .contact-section {
+    padding: 60px 20px;
+    margin: 80px 0;
+  }
+  
+  .contact-section h2 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info {
+    font-size: 0.85rem;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+} 
